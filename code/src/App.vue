@@ -5,5 +5,7 @@ import NavBar from './nav-bar/NavBar.vue'
 
 <template>
   <NavBar />
-  <RouterView />
+  <Suspense>
+    <RouterView />
+  </Suspense>
 </template>
